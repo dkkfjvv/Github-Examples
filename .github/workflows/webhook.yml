@@ -14,7 +14,7 @@ jobs:
       - name: Run a script
         run: | 
           echo "Event of type: ${GITHUB_EVENT_NAME}"
-          echo "what the heck: ${github.event.client_payload.username}"
-          echo "event-client_payload: ${github.event.client_payload}"
-          echo "event: ${github.event}"
+          echo "what the heck: ${{github.event.client_payload.username}}"
+          echo "event-client_payload: ${{github.event.client_payload}}"
+          echo "event: ${{github.event}}"
           
