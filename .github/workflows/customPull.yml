@@ -1,0 +1,17 @@
+name: pullll-github-action-custom
+
+on:
+  ['push']
+
+jobs:
+  my-custom:
+    runs-on: ubuntu-latest
+    name: hello 드가자
+    steps:
+      - name: hello step임
+        id: hello
+        uses: dkkfjvv/barsson@0.0.1
+        with:
+          who-to-great: "what the heck"
+      - name: Get the output time
+        run: echo "The time was ${{ steps.hello.outputs.outputKey1 }}"
