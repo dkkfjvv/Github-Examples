@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: hello step임
         id: hello
-        uses: dkkfjvv/barsson@0.0.1
+        uses: dkkfjvv/barsson@0.0.3
         with:
           who-to-greet: "what the heck12"
       - name: Get the output time
