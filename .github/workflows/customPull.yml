@@ -12,6 +12,6 @@ jobs:
         id: hello
         uses: dkkfjvv/barsson@0.0.1
         with:
-          who-to-greet: "what the heck"
+          who-to-greet: "what the heck1"
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.outputKey1 }}"
